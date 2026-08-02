@@ -5,7 +5,7 @@ export const createEducation = ({ education }) =>
     <main class="page-content">
       <section class="content-section">
         <div class="section-heading">
-          <h1>Academic foundation</h1>
+          <h1>Academic progress</h1>
           <p class="page-subtitle">A progression from strong school performance to advanced training in computer science and artificial intelligence.</p>
         </div>
       </section>

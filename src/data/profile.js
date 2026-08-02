@@ -195,12 +195,12 @@ export const profile = {
 
   experiences: [
     {
-      role: 'PhD Research Scholar',
+      role: 'Teaching Assistant',
       company: 'Indian Institute of Technology Ropar',
       period: 'Current',
       location: 'Rupnagar, Punjab, India',
       description:
-        'Researching adversarial attacks on medical images with a focus on robust and trustworthy deep learning for healthcare-oriented computer vision.'
+        'Assisted in teaching undergraduate courses on machine learning and computer vision, providing support for labs, assignments, and student queries.'
     },
     {
       role: 'Research Intern',
@@ -248,7 +248,6 @@ export const profile = {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/riya-goyal-299642194/'
     },
-    { icon: 'fa-envelope', iconStyle: 'fa-solid', label: 'Email', url: 'mailto:riya.24csz0006@iitropar.ac.in' },
-    { icon: 'fa-file-pdf', iconStyle: 'fa-solid', label: 'CV', url: './docs/Riya_Goyal.pdf' }
+    { icon: 'fa-envelope', iconStyle: 'fa-solid', label: 'Email', url: 'mailto:riya.24csz0006@iitropar.ac.in' }
   ]
 };

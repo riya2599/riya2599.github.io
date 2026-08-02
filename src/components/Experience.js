@@ -5,7 +5,7 @@ export const createExperience = ({ experiences }) =>
     <main class="page-content">
       <section class="content-section">
         <div class="section-heading">
-          <h1>Research and AI internship experience</h1>
+          <h1>Research and Teaching Experience</h1>
           <p class="page-subtitle">Hands-on work across research, computer vision, and NLP problem settings.</p>
         </div>
       </section>
