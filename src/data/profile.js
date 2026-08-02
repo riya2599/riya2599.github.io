@@ -15,6 +15,7 @@ export const profile = {
   resumeUrl: './docs/Riya_Goyal.pdf',
   linkedinUrl: 'https://www.linkedin.com/in/riya-goyal-299642194/',
   githubUrl: 'https://github.com/riya2599',
+  googleScholarUrl: 'https://scholar.google.com/citations?user=yCcgHWEAAAAJ&hl=en',
   heroKicker: 'Medical Imaging Security | Robust AI',
   researchTheme: 'Adversarial attacks on medical images',
   heroStatement:
@@ -235,6 +236,12 @@ export const profile = {
 
   socialLinks: [
     { icon: 'fa-github', iconStyle: 'fa-brands', label: 'GitHub', url: 'https://github.com/riya2599' },
+    {
+      icon: 'fa-google-scholar',
+      iconStyle: 'fa-brands',
+      label: 'Google Scholar',
+      url: 'https://scholar.google.com/citations?user=yCcgHWEAAAAJ&hl=en'
+    },
     {
       icon: 'fa-linkedin-in',
       iconStyle: 'fa-brands',

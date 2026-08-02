@@ -1,30 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Medical AI adversarial robustness favicon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Adversarial attack robustness favicon">
   <defs>
-    <linearGradient id="bg" x1="16" y1="10" x2="116" y2="120" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="12" y1="10" x2="118" y2="120" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#07192d" />
-      <stop offset="0.58" stop-color="#0b5f59" />
+      <stop offset="0.54" stop-color="#0f2742" />
       <stop offset="1" stop-color="#0f766e" />
     </linearGradient>
-    <linearGradient id="cross" x1="32" y1="28" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+    <linearGradient id="target" x1="34" y1="26" x2="92" y2="96" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f7fbfd" />
       <stop offset="1" stop-color="#b9f0e9" />
     </linearGradient>
+    <linearGradient id="attack" x1="20" y1="104" x2="106" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6b4a" />
+      <stop offset="1" stop-color="#ffb454" />
+    </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#03101d" flood-opacity="0.34" />
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#03101d" flood-opacity="0.36" />
     </filter>
   </defs>
+
   <rect width="128" height="128" rx="28" fill="url(#bg)" />
-  <path d="M64 17 97 31v26c0 25-13 43-33 54-20-11-33-29-33-54V31l33-14Z" fill="#d9fbf7" opacity="0.18" />
-  <path d="M64 24 91 36v21c0 21-10 35-27 45-17-10-27-24-27-45V36l27-12Z" fill="#0f2742" opacity="0.48" />
+  <path d="M64 17 99 31v26c0 25-14 43-35 54-21-11-35-29-35-54V31l35-14Z" fill="#d9fbf7" opacity="0.12" />
+
   <g filter="url(#shadow)">
-    <path d="M54 31h20v22h22v20H74v22H54V73H32V53h22V31Z" fill="url(#cross)" />
+    <circle cx="64" cy="62" r="36" fill="url(#target)" />
+    <circle cx="64" cy="62" r="25" fill="none" stroke="#0f2742" stroke-width="8" />
+    <circle cx="64" cy="62" r="11" fill="#ff6b4a" />
   </g>
-  <path d="M35 90c9-18 16-24 29-24s20-6 29-24" fill="none" stroke="#ffb454" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M87 38h16v16" fill="none" stroke="#ffb454" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-  <g fill="#ff6b4a">
-    <rect x="20" y="24" width="8" height="8" rx="2" />
-    <rect x="103" y="76" width="7" height="7" rx="2" />
-    <rect x="24" y="101" width="6" height="6" rx="2" />
-    <rect x="94" y="98" width="9" height="9" rx="2" />
-  </g>
+
+  <path d="M21 103 42 82l-9-9 32-18" fill="none" stroke="url(#attack)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M62 42 101 35 84 71Z" fill="url(#attack)" />
+  <path d="M19 30h10v10H19Zm18 8h8v8h-8Zm67 48h8v8h-8Zm-14 17h10v10H90Z" fill="#8ee5dc" opacity="0.9" />
+  <path d="M23 58h7v7h-7Zm78-35h7v7h-7Zm-3 78h6v6h-6Z" fill="#ff6b4a" />
 </svg>
