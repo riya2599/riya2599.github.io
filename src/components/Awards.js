@@ -3,10 +3,11 @@ import { createElementFromHTML, createList } from '../utils/dom.js';
 export const createAwards = ({ awards }) =>
   createElementFromHTML(`
     <main class="page-content">
-      <section class="page-hero glass-panel">
-        <p class="eyebrow">Recognition</p>
-        <h1>Academic distinctions and milestones</h1>
-        <p class="page-subtitle">Recognition anchored in examinations, academic performance, and research output.</p>
+      <section class="content-section">
+        <div class="section-heading">
+          <h1>Academic distinctions and milestones</h1>
+          <p class="page-subtitle">Recognition anchored in examinations, academic performance, and research output.</p>
+        </div>
       </section>
 
       <section class="awards-container">

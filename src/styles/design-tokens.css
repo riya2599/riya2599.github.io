@@ -10,6 +10,10 @@
   --accent-strong: #0b5f59;
   --gold: #b7791f;
   --border: #d6dee8;
+  --footer-surface: linear-gradient(135deg, #edf4f8 0%, #e0f1ef 100%);
+  --footer-border: #bfd2dc;
+  --tile-rail: linear-gradient(180deg, #07192d 0%, #0b5f59 100%);
+  --tile-rail-top: linear-gradient(90deg, #07192d 0%, #0b5f59 68%, #b7791f 100%);
   --hero-text: #ffffff;
   --hero-muted: #d9e7f2;
   --shadow: 0 18px 44px rgba(15, 39, 66, 0.1);

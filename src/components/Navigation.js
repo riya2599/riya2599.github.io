@@ -1,6 +1,6 @@
 import { createElementFromHTML } from '../utils/dom.js';
 
-export const createNavigation = ({ shortName, initials, profilePhoto, cvUrl }, activePage = 'home') => {
+export const createNavigation = ({ shortName, initials, profilePhoto }, activePage = 'home') => {
   const brandMark = profilePhoto
     ? `<img src="${profilePhoto}" alt="" class="brand-photo" />`
     : `<span class="brand-monogram" aria-hidden="true">${initials}</span>`;
@@ -23,12 +23,6 @@ export const createNavigation = ({ shortName, initials, profilePhoto, cvUrl }, a
           <a href="/skills.html" class="${activePage === 'skills' ? 'active' : ''}">Skills</a>
           <a href="/contact.html" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
         </nav>
-        <div class="nav-actions">
-          <a class="btn btn-nav" href="${cvUrl}" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-file-pdf"></i>
-            CV
-          </a>
-        </div>
       </div>
     </header>
   `);

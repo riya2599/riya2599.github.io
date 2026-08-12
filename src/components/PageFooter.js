@@ -53,7 +53,7 @@ export const createPageFooter = ({ fullName, role, email, office, university, lo
       <hr class="footer-divider" />
 
       <div class="footer-bottom">
-        <p>&copy; ${currentYear} ${fullName}. Academic portfolio.</p>
+        <p>&copy; ${currentYear} ${fullName}. All rights reserved.</p>
         <div class="footer-meta">
           <a href="/sitemap.html">Sitemap</a>
           <span class="separator">|</span>

@@ -58,6 +58,180 @@ body {
   box-shadow: var(--shadow);
 }
 
+:where(
+  .metric-card,
+  .feature-card,
+  .publication-item,
+  .project-item,
+  .skill-category,
+  .teaching-card,
+  .experience-card,
+  .education-card,
+  .award-item,
+  .about-section,
+  .about-block-container,
+  .interest-item,
+  .contact-methods,
+  .contact-social,
+  .contact-method,
+  .contact-social-links a,
+  .page-hero,
+  .about-hero,
+  .contact-hero,
+  .prose-panel,
+  .legal-content > .glass-panel,
+  .sitemap-page > .glass-panel
+) {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(7, 25, 45, 0.15);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+  animation: tile-reveal 520ms ease both;
+}
+
+:where(
+  .metric-card,
+  .feature-card,
+  .publication-item,
+  .project-item,
+  .skill-category,
+  .teaching-card,
+  .experience-card,
+  .education-card,
+  .award-item,
+  .about-section,
+  .about-block-container,
+  .interest-item,
+  .contact-methods,
+  .contact-social,
+  .contact-method,
+  .contact-social-links a,
+  .page-hero,
+  .about-hero,
+  .contact-hero,
+  .prose-panel,
+  .legal-content > .glass-panel,
+  .sitemap-page > .glass-panel
+)::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--tile-rail);
+  opacity: 0.94;
+  pointer-events: none;
+}
+
+:where(
+  .metric-card,
+  .feature-card,
+  .publication-item,
+  .project-item,
+  .skill-category,
+  .teaching-card,
+  .award-item,
+  .interest-item,
+  .contact-method,
+  .contact-social-links a,
+  .page-hero,
+  .about-hero,
+  .contact-hero,
+  .prose-panel,
+  .legal-content > .glass-panel,
+  .sitemap-page > .glass-panel
+)::before {
+  inset: 0 0 auto 0;
+  width: auto;
+  height: 4px;
+  background: var(--tile-rail-top);
+}
+
+@keyframes tile-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:where(.metrics, .cards-grid, .publications-list, .projects-list, .education-cards, .experience-timeline, .awards-container, .skills-grid, .teaching-grid, .interests-grid, .contact-grid, .faq-items) > *:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+:where(.metrics, .cards-grid, .publications-list, .projects-list, .education-cards, .experience-timeline, .awards-container, .skills-grid, .teaching-grid, .interests-grid, .contact-grid, .faq-items) > *:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+:where(.metrics, .cards-grid, .publications-list, .projects-list, .education-cards, .experience-timeline, .awards-container, .skills-grid, .teaching-grid, .interests-grid, .contact-grid, .faq-items) > *:nth-child(4) {
+  animation-delay: 210ms;
+}
+
+:where(.metrics, .cards-grid, .publications-list, .projects-list, .education-cards, .experience-timeline, .awards-container, .skills-grid, .teaching-grid, .interests-grid, .contact-grid, .faq-items) > *:nth-child(n + 5) {
+  animation-delay: 280ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(
+    .metric-card,
+    .feature-card,
+    .publication-item,
+    .project-item,
+    .skill-category,
+    .teaching-card,
+    .experience-card,
+    .education-card,
+    .award-item,
+    .about-section,
+    .about-block-container,
+    .interest-item,
+    .contact-methods,
+    .contact-social,
+    .contact-method,
+    .contact-social-links a,
+    .page-hero,
+    .about-hero,
+    .contact-hero,
+    .prose-panel,
+    .legal-content > .glass-panel,
+    .sitemap-page > .glass-panel
+  ):hover,
+  :where(
+    .metric-card,
+    .feature-card,
+    .publication-item,
+    .project-item,
+    .skill-category,
+    .teaching-card,
+    .experience-card,
+    .education-card,
+    .award-item,
+    .about-section,
+    .about-block-container,
+    .interest-item,
+    .contact-methods,
+    .contact-social,
+    .contact-method,
+    .contact-social-links a,
+    .page-hero,
+    .about-hero,
+    .contact-hero,
+    .prose-panel,
+    .legal-content > .glass-panel,
+    .sitemap-page > .glass-panel
+  ):focus-within {
+    transform: translateY(-4px);
+    border-color: rgba(7, 25, 45, 0.26);
+    box-shadow: 0 24px 54px rgba(7, 25, 45, 0.16);
+  }
+}
+
 .site-header {
   position: sticky;
   top: 1rem;
@@ -201,17 +375,6 @@ body {
   border-color: rgba(142, 229, 220, 0.3);
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  transition:
-    opacity 180ms ease,
-    max-width 220ms ease,
-    transform 220ms ease,
-    visibility 180ms ease;
-}
-
 .site-header.is-collapsed {
   width: max-content;
   max-width: calc(100vw - 2rem);
@@ -235,8 +398,7 @@ body {
 }
 
 .site-header.is-collapsed .brand-name,
-.site-header.is-collapsed .nav-links,
-.site-header.is-collapsed .nav-actions {
+.site-header.is-collapsed .nav-links {
   max-width: 0;
   opacity: 0;
   overflow: hidden;
@@ -248,10 +410,6 @@ body {
 .site-header.is-collapsed .nav-links {
   flex: 0 1 0;
   gap: 0;
-  width: 0;
-}
-
-.site-header.is-collapsed .nav-actions {
   width: 0;
 }
 
@@ -293,20 +451,6 @@ body {
   background: var(--primary);
   border-color: var(--primary);
   color: #fff;
-}
-
-.btn-nav {
-  min-height: 38px;
-  padding: 0.55rem 0.85rem;
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.22);
-  color: #fff;
-}
-
-.btn-nav:hover,
-.btn-nav:focus {
-  background: rgba(255, 255, 255, 0.24);
-  border-color: rgba(255, 255, 255, 0.38);
 }
 
 .hero {
@@ -515,7 +659,8 @@ body {
 
 .content-section,
 .page-content,
-.about-block-section {
+.about-block-section,
+.sitemap-page {
   display: grid;
   gap: 1.5rem;
 }
@@ -561,14 +706,15 @@ body {
 .contact-methods,
 .contact-social,
 .faq-section,
-.legal-content {
+.legal-content,
+.legal-content > .glass-panel,
+.sitemap-page > .glass-panel {
   padding: clamp(1.2rem, 2.4vw, 1.75rem);
 }
 
 .feature-card {
   display: grid;
   gap: 0.6rem;
-  border-top: 3px solid var(--accent);
 }
 
 .feature-card i,
@@ -737,7 +883,6 @@ body {
 .experience-card {
   display: grid;
   gap: 0.65rem;
-  border-left: 4px solid var(--accent);
 }
 
 .gpa,
@@ -926,6 +1071,9 @@ body {
 
 .site-footer {
   padding: clamp(1.5rem, 3vw, 2rem);
+  background: var(--footer-surface);
+  border-color: var(--footer-border);
+  box-shadow: 0 20px 46px rgba(7, 25, 45, 0.11);
 }
 
 .footer-content {
@@ -972,13 +1120,13 @@ body {
   border: 1px solid var(--border);
   border-radius: 50%;
   color: var(--primary);
-  background: var(--surface-muted);
+  background: rgba(255, 255, 255, 0.64);
 }
 
 .footer-divider {
   border: 0;
   height: 1px;
-  background: var(--border);
+  background: rgba(7, 25, 45, 0.15);
   margin: 1.4rem 0 1rem;
 }
 
@@ -1023,6 +1171,87 @@ body {
 .sitemap-list a {
   color: var(--accent-strong);
   font-weight: 750;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(
+    .metric-card,
+    .feature-card,
+    .publication-item,
+    .project-item,
+    .skill-category,
+    .teaching-card,
+    .experience-card,
+    .education-card,
+    .award-item,
+    .about-section,
+    .about-block-container,
+    .interest-item,
+    .contact-methods,
+    .contact-social,
+    .contact-method,
+    .contact-social-links a,
+    .page-hero,
+    .about-hero,
+    .contact-hero,
+    .prose-panel,
+    .legal-content > .glass-panel,
+    .sitemap-page > .glass-panel
+  ) {
+    animation: none;
+    transition: none;
+  }
+
+  :where(
+    .metric-card,
+    .feature-card,
+    .publication-item,
+    .project-item,
+    .skill-category,
+    .teaching-card,
+    .experience-card,
+    .education-card,
+    .award-item,
+    .about-section,
+    .about-block-container,
+    .interest-item,
+    .contact-methods,
+    .contact-social,
+    .contact-method,
+    .contact-social-links a,
+    .page-hero,
+    .about-hero,
+    .contact-hero,
+    .prose-panel,
+    .legal-content > .glass-panel,
+    .sitemap-page > .glass-panel
+  ):hover,
+  :where(
+    .metric-card,
+    .feature-card,
+    .publication-item,
+    .project-item,
+    .skill-category,
+    .teaching-card,
+    .experience-card,
+    .education-card,
+    .award-item,
+    .about-section,
+    .about-block-container,
+    .interest-item,
+    .contact-methods,
+    .contact-social,
+    .contact-method,
+    .contact-social-links a,
+    .page-hero,
+    .about-hero,
+    .contact-hero,
+    .prose-panel,
+    .legal-content > .glass-panel,
+    .sitemap-page > .glass-panel
+  ):focus-within {
+    transform: none;
+  }
 }
 
 @media (max-width: 980px) {
@@ -1122,15 +1351,6 @@ body {
 
   .header-container {
     padding: 0.75rem;
-  }
-
-  .nav-actions,
-  .btn-nav {
-    width: 100%;
-  }
-
-  .site-header.is-collapsed .nav-actions {
-    width: 0;
   }
 
   .hero {

@@ -3,10 +3,11 @@ import { createElementFromHTML, createList } from '../utils/dom.js';
 export const createEducation = ({ education }) =>
   createElementFromHTML(`
     <main class="page-content">
-      <section class="page-hero glass-panel">
-        <p class="eyebrow">Education</p>
-        <h1>Academic foundation</h1>
-        <p class="page-subtitle">A progression from strong school performance to advanced training in computer science and artificial intelligence.</p>
+      <section class="content-section">
+        <div class="section-heading">
+          <h1>Academic progress</h1>
+          <p class="page-subtitle">A progression from strong school performance to advanced training in computer science and artificial intelligence.</p>
+        </div>
       </section>
 
       <section class="education-cards">

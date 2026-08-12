@@ -4,7 +4,6 @@ export const createProjects = ({ projects }) =>
   createElementFromHTML(`
     <section id="projects" class="content-section">
       <div class="section-heading">
-        <p class="eyebrow">Portfolio</p>
         <h2>Selected Academic Projects</h2>
       </div>
       <div class="projects-list">

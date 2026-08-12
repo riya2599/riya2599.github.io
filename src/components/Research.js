@@ -4,7 +4,6 @@ export const createResearch = ({ publications, researchTheme }) =>
   createElementFromHTML(`
     <section id="research" class="content-section">
       <div class="section-heading">
-        <p class="eyebrow">Research</p>
         <h2>Research and Publications</h2>
         <p class="section-subtitle">
           Current focus: ${researchTheme}. Earlier peer-reviewed work includes machine learning for text analysis

@@ -15,6 +15,7 @@ export const profile = {
   resumeUrl: './docs/Riya_Goyal.pdf',
   linkedinUrl: 'https://www.linkedin.com/in/riya-goyal-299642194/',
   githubUrl: 'https://github.com/riya2599',
+  googleScholarUrl: 'https://scholar.google.com/citations?user=yCcgHWEAAAAJ&hl=en',
   heroKicker: 'Medical Imaging Security | Robust AI',
   researchTheme: 'Adversarial attacks on medical images',
   heroStatement:
@@ -194,12 +195,12 @@ export const profile = {
 
   experiences: [
     {
-      role: 'PhD Research Scholar',
+      role: 'Teaching Assistant',
       company: 'Indian Institute of Technology Ropar',
       period: 'Current',
       location: 'Rupnagar, Punjab, India',
       description:
-        'Researching adversarial attacks on medical images with a focus on robust and trustworthy deep learning for healthcare-oriented computer vision.'
+        'Assisted in teaching undergraduate courses on machine learning and computer vision, providing support for labs, assignments, and student queries.'
     },
     {
       role: 'Research Intern',
@@ -235,6 +236,12 @@ export const profile = {
 
   socialLinks: [
     { icon: 'fa-github', iconStyle: 'fa-brands', label: 'GitHub', url: 'https://github.com/riya2599' },
+    {
+      icon: 'fa-google-scholar',
+      iconStyle: 'fa-brands',
+      label: 'Google Scholar',
+      url: 'https://scholar.google.com/citations?user=yCcgHWEAAAAJ&hl=en'
+    },
     {
       icon: 'fa-linkedin-in',
       iconStyle: 'fa-brands',

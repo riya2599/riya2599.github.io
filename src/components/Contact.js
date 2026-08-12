@@ -3,12 +3,13 @@ import { createElementFromHTML, createList } from '../utils/dom.js';
 export const createContact = ({ email, office, university, location, socialLinks, researchTheme }) =>
   createElementFromHTML(`
     <main class="page-content">
-      <section class="contact-hero glass-panel">
-        <p class="eyebrow">Contact</p>
-        <h1>Academic Contact</h1>
-        <p class="contact-intro">
-          For research discussions related to ${researchTheme}, please use the contact information below.
-        </p>
+      <section class="content-section">
+        <div class="section-heading">
+          <h1>Academic Contact</h1>
+          <p class="page-subtitle">
+            For research discussions related to ${researchTheme}, please use the contact information below.
+          </p>
+        </div>
       </section>
 
       <section class="contact-methods glass-panel">

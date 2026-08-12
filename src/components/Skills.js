@@ -14,10 +14,11 @@ export const createSkills = ({ skillGroups, professionalStrengths, skills = {} }
 
   return createElementFromHTML(`
     <main class="page-content">
-      <section class="page-hero glass-panel">
-        <p class="eyebrow">Skills</p>
-        <h1>Technical breadth with strong CS fundamentals</h1>
-        <p class="page-subtitle">Programming, AI methods, development tools, and core computer science foundations.</p>
+      <section class="content-section">
+        <div class="section-heading">
+          <h1>Technical breadth with strong CS fundamentals</h1>
+          <p class="page-subtitle">Programming, AI methods, development tools, and core computer science foundations.</p>
+        </div>
       </section>
 
       <section class="skills-grid">
