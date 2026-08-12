@@ -6,7 +6,7 @@ export const profile = {
   university: 'Indian Institute of Technology Ropar',
   department: 'Department of Computer Science and Engineering',
   location: 'Rupnagar, Punjab, India',
-  email: 'riya.24csz0006@iitropar.ac.in',
+  email: 'riya.24csz0006@iitrpr.ac.in',
   office: 'Department of Computer Science and Engineering, IIT Ropar',
   advisor: '',
   profilePhoto: './assets/profile-photo.jpeg',
@@ -248,6 +248,7 @@ export const profile = {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/riya-goyal-299642194/'
     },
-    { icon: 'fa-envelope', iconStyle: 'fa-solid', label: 'Email', url: 'mailto:riya.24csz0006@iitropar.ac.in' }
+    { icon: 'fa-envelope', iconStyle: 'fa-solid', label: 'Email', url: 'mailto:riya.24csz0006@iitrpr.ac.in' },
+    { icon: 'fa-file-pdf', iconStyle: 'fa-solid', label: 'CV', url: './docs/Riya_Goyal.pdf' }
   ]
 };
